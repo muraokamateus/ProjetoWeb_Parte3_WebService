@@ -22,5 +22,6 @@ app.use('/api/user', authRoute);
 app.use('/api/article', apiRoute);
 
 
-app.listen(3000, ()=>console.log('Servidor Ativo! Está funcionando! '));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
 
